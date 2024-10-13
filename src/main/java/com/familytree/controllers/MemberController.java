@@ -32,7 +32,6 @@ public class MemberController {
     // add
     @PostMapping("/members")
     public Member addMember(@RequestBody Member theMember) {
-        theMember.setId(1);
         return memberService.saveMember(theMember);
     }
     
